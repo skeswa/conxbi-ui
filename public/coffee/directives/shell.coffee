@@ -1,3 +1,6 @@
 define(['./module'], (module) ->
-    # TODO put shit here
+    module.directive('header', () ->
+        restrict: 'E'
+        templateUrl: 'views/shell/header.html'
+    )
 )

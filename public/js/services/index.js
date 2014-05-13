@@ -1,0 +1,1 @@
+define(['./plugin'], function() {});

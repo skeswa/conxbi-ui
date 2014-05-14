@@ -33,7 +33,7 @@ var paths = {
     styles: ['./public/less/**/*.*']
 };
 
-gulp.task('watch', function () {
+gulp.task('watch', ['less', 'coffee'], function () {
     gulp.watch(paths.scripts, ['lint', 'coffee']);
     gulp.watch(paths.styles, ['less']); 
 });

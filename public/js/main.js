@@ -3,6 +3,7 @@ require.config({
     'angular': '../lib/angular/angular',
     '$': '../lib/jquery/dist/jquery.min',
     'bootstrap': '../lib/bootstrap/dist/js/bootstrap.min',
+    'angularBootstrap': '../lib/angular-bootstrap/ui-bootstrap.min',
     'log': '../js/log',
     'angularRoute': '../lib/angular-route/angular-route.min',
     'domReady': '../lib/requirejs-domready/domReady'
@@ -12,6 +13,9 @@ require.config({
       'exports': 'angular'
     },
     'angularRoute': {
+      'deps': ['angular']
+    },
+    'angularBootstrap': {
       'deps': ['angular']
     },
     '$': {

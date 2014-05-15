@@ -16,6 +16,11 @@ define(() ->
                     icon: 'glyphicon glyphicon-inbox'
                     view: 'home/notifications'
                     controller: 'Home.NotificationsCtrl'
+                '/HURP':
+                    name: 'Herpaderp'
+                    icon: 'glyphicon glyphicon-random'
+                    view: 'home/herp'
+                    controller: 'Home.HupCtrl'
         '/workbench':
             name: 'Workbench'
             icon: 'glyphicon glyphicon-wrench'

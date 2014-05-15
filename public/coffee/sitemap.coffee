@@ -22,13 +22,13 @@ define(() ->
             nav:
                 '/etl':
                     name: 'ETL Editor'
-                    icon: 'glyphicon glyphicon-dashboard'
+                    icon: 'glyphicon glyphicon-random'
                     view: 'workbench/etl'
                     controller: 'Workbench.ETLCtrl'
                     main: true
                 '/metadata':
                     name: 'Metadata Editor'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-book'
                     view: 'workbench/metadata'
                     controller: 'Workbench.MetadataCtrl'
         '/repositories':
@@ -37,18 +37,18 @@ define(() ->
             nav:
                 '/file':
                     name: 'File'
-                    icon: 'glyphicon glyphicon-dashboard'
+                    icon: 'glyphicon glyphicon-file'
                     view: 'repositories/file'
                     controller: 'Repositories.FileCtrl'
                     main: true
                 '/reports':
                     name: 'Reports'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-stats'
                     view: 'repositories/reports'
                     controller: 'Repositories.ReportsCtrl'
                 '/emails':
                     name: 'Emails'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-envelope'
                     view: 'repositories/emails'
                     controller: 'Reportories.EmailCtrl'
         '/jobs':
@@ -63,17 +63,17 @@ define(() ->
                     main: true
                 '/scheduling':
                     name: 'Scheduling'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-calendar'
                     view: 'jobs/scheduling'
                     controller: 'Jobs.SchedulingCtrl'
                 '/health':
                     name: 'Health'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-heart'
                     view: 'jobs/HealthCtrl'
                     controller: 'Jobs.HealthCtrl'
                 '/history':
                     name: 'History'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-book'
                     view: 'jobs/HistoryCtrl'
                     controller: 'Jobs.HistoryCtrl'
         '/notifications':
@@ -88,7 +88,7 @@ define(() ->
                     main: true
                 '/history':
                     name: 'History'
-                    icon: 'glyphicon glyphicon-warning-sign'
+                    icon: 'glyphicon glyphicon-book'
                     view: 'notifications/history'
                     controller: 'Notifications.HistoryCtrl'
     return map

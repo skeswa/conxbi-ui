@@ -1,10 +1,9 @@
 <div class="wrapper">
     <div class="navbar navbar-default">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-            <li><a href="#about"><i class="glyphicon glyphicon-pencil"></i> Editor</a></li>
-            <li><a href="#contact"><i class="glyphicon glyphicon-tasks"></i> Repositories</a></li>
-            <li><a href="#contact"><i class="glyphicon glyphicon-ok"></i> Jobs</a></li>
+            <li data-ng-repeat="page in current.category.pages" data-ng-class="{active: current.page === page}">
+            <a data-ng-href="#{{ page.route }}"><i class="{{ page.icon }}"></i> {{ page.name }}</a>
+            </li>
         </ul>
     </div>
 </div>

@@ -9,9 +9,11 @@
     <body>
         <!-- Primary DOM regions -->
         <header></header>
-        <navbar></navbar>
-        <subnavbar></subnavbar>
-        <content ng-view></content>
+        <nav data-ng-controller="NavCtrl">
+            <navbar></navbar>
+            <subnavbar></subnavbar>
+        </nav>
+        <content data-ng-view></content>
         <!-- Import RequireJS -->
         <script data-main="../js/main" src="../lib/requirejs/require.js" type="text/javascript"></script>
     </body>

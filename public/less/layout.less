@@ -1,32 +1,54 @@
-header {
+@header-height:     30px;
+@navbar-height:     40px;
+@subnavbar-height:  32px;
+@nav-height: @navbar-height + @subnavbar-height;
+
+@header-top: 0px;
+@navbar-top: 0px;
+@subnavbar-top: @navbar-top + @navbar-height;
+@nav-top: @header-top + @header-height;
+@content-top: @nav-top + @nav-height;
+
+.primary-region {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 0px;
-    height: 29px;
+    overflow: hidden;
+}
+
+header {
+    top: @header-top;
+    height: @header-height;
     z-index: 1100;
+    .primary-region;
 }
 navbar {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 30px;
-    height: 40px;
+    top: @navbar-top;
+    height: @navbar-height;
     z-index: 1000;
+    .primary-region;
 }
 subnavbar {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 72px;
-    height: 20px;
+    top: @subnavbar-top;
+    height: @subnavbar-height;
     z-index: 900;
+    .primary-region;
+}
+nav {
+    top: @nav-top;
+    height: @nav-height;
+    z-index: 1000;
+    .primary-region;
 }
 content {
-    position: absolute;
-    left: 0px;
-    right: 0px;
     bottom: 0px;
-    top: 92px;
-    overflow: auto;
+    top: @content-top;
+    z-index: 800;
+    .primary-region;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

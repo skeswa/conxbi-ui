@@ -1,6 +1,6 @@
 header {
     div.wrapper {
-        height: 29px;
+        height: 30px;
         width: 100%;
         padding-left: 28px;
         padding-right: 5px;
@@ -9,27 +9,36 @@ header {
             margin-top: 3px;
         }
         div.pull-right {
+            height: 30px;
             margin-right: -2px;
-        }
-        div, div ul, div ul li, div ul li a {
-            height: 29px;
-        }
-        div ul li a {
-            font-size: 12px;
-            padding-top: 5px;
-            padding-left: 8px;
-            padding-right: 8px;
-            margin-left: 4px;
-            border-bottom: none;
-            border-radius: 0px;
-            color: rgb(119, 119, 119);
-        }
-        div ul li {
-            padding: 0px;
-            margin: 0px;
-        }
-        div ul {
-            border-bottom: none;
+
+            ul.nav-tabs {
+                height: 30px;
+                border-bottom: none;
+
+                li {
+                    height: 30px;
+                    padding: 0px;
+                    margin: 0px;
+
+                    a {
+                        height: 30px;
+                        font-size: 12px;
+                        padding-top: 5px;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        margin-left: 4px;
+                        border: none;
+                        border-radius: 0px;
+                        color: rgb(119, 119, 119);
+                    }
+                }
+                ul.dropdown-menu {
+                    top: 31px;
+                    left: auto;
+                    right: 2px;
+                }
+            }
         }
     }
 }

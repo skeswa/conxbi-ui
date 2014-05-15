@@ -1,12 +1,18 @@
-define(['app', 'angularRoute'], (app) ->
+define(['./app', 'angularRoute', './sitemap', 'log'], (app, ngRoute, sitemap, log) ->
     return app.config(['$routeProvider', (router) ->
-        router.when('/',
-            templateUrl: '../views/home.html',
-            controller: 'HomeCtrl'
-        ).when('dashboard',
-            templateUrl: '../views/dashboard',
-            controller: 'DashboardCtrl'
-        ).otherwise(redirectTo: '/')
+        # Iterate through the sitemap
+        for categoryKey, category of sitemap
+            for navItemKey, navItem of category.nav
+                route = categoryKey + navItemKey
+                log.debug 'Registering route \'' + route + '\' to angular context'
+                router.when(route,
+                    templateUrl: '../views/' + navItem.view + '.html'
+                    controller: category.controller
+                )
+                # Establish the default view
+                if navItem.main 
+                    router.when(categoryKey, redirectTo: route)
+                    if category.main then router.otherwise redirectTo: route
     ])
 )
 

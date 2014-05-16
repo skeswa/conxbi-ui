@@ -21,6 +21,7 @@ header {
     height: @header-height;
     z-index: 1100;
     .primary-region;
+    overflow: visible;
 }
 navbar {
     top: @navbar-top;
@@ -44,6 +45,12 @@ content {
     bottom: 0px;
     top: @content-top;
     z-index: 800;
+    .primary-region;
+}
+overlay {
+    top: 0px;
+    bottom: 0px;
+    z-index: 2000;
     .primary-region;
 }
 

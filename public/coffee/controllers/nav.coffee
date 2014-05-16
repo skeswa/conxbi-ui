@@ -8,7 +8,7 @@ define(['./module', '../sitemap'], (module, sitemap) ->
         # Populate categories and route map
         for categoryPath, category of sitemap
             $scope.categories.push category
-            category.route = categoryPath;
+            category.route = categoryPath
             for pagePath, page of category.nav
                 if not category.pages? then category.pages = []
                 route = categoryPath + pagePath

@@ -1,2 +1,2 @@
 # Empty require block is for loading all controllers
-define(['./shell'], ->)
+define(['./shell', './util'], ->)

@@ -10,7 +10,7 @@ define(['./app', 'angularRoute', './sitemap', 'log'], (app, ngRoute, sitemap, lo
                     controller: category.controller
                 )
                 # Establish the default view
-                if navItem.main 
+                if navItem.main
                     router.when(categoryKey, redirectTo: route)
                     if category.main then router.otherwise redirectTo: route
     ])

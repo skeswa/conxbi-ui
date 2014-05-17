@@ -1,0 +1,10 @@
+/*Set background Mask Darkness */
+.ext-el-mask {
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+.error-row {
+    color:red !important;
+    background-color: #FFE5CC;
+}

@@ -1,0 +1,23 @@
+overlay {
+  background: #fff;
+}
+overlay div#loading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  margin-left: -200px;
+  margin-top: -75px;
+  text-align: center;
+}
+overlay div#loading-box img#logo {
+  position: absolute;
+  top: 0px;
+  left: 25px;
+}
+overlay div#loading-box img#loader {
+  position: absolute;
+  left: 100px;
+  bottom: 0px;
+}

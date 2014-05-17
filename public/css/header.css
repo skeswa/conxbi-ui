@@ -1,0 +1,39 @@
+header div.wrapper {
+  height: 30px;
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 5px;
+}
+header div.wrapper a#logo {
+  margin-top: 3px;
+}
+header div.wrapper div.pull-right {
+  height: 30px;
+  margin-right: -2px;
+}
+header div.wrapper div.pull-right ul.nav-tabs {
+  height: 30px;
+  border-bottom: none;
+}
+header div.wrapper div.pull-right ul.nav-tabs li {
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+header div.wrapper div.pull-right ul.nav-tabs li a {
+  height: 30px;
+  font-size: 12px;
+  padding-top: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 0px;
+  color: #777777;
+  cursor: pointer;
+}
+header div.wrapper div.pull-right ul.nav-tabs ul.dropdown-menu {
+  top: 31px;
+  left: auto;
+  right: 2px;
+}

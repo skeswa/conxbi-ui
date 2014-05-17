@@ -1,0 +1,41 @@
+subnavbar .wrapper {
+  width: 100%;
+  padding: 0px 30px;
+}
+subnavbar .navbar {
+  height: 32px;
+  min-height: 0px;
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+}
+subnavbar .navbar ul.nav.navbar-nav li {
+  margin-top: 2px;
+  color: #777777;
+}
+subnavbar .navbar ul.nav.navbar-nav li a {
+  padding: 2px 12px;
+  text-shadow: 0 1px 0 #ffffff;
+  border-radius: 2px;
+  color: #777777;
+  outline: 0 none;
+}
+subnavbar .navbar ul.nav.navbar-nav li a i {
+  padding-right: 5px;
+}
+subnavbar .navbar ul.nav.navbar-nav li.active {
+  text-decoration: none;
+}
+subnavbar .navbar ul.nav.navbar-nav li.active a {
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}

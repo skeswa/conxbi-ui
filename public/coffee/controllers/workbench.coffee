@@ -60,7 +60,7 @@ define(['./module', 'ext', 'log'], (module, Ext, log) ->
                 rootVisible: false
                 autoScroll: true
                 title: 'Example Tasks'
-                animEl: 'test'
+                renderTo: 'test'
                 columns: [
                     {
                         header: 'Task'

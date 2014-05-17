@@ -1,5 +1,5 @@
 define(['./module'], (module) ->
-    module.controller('HomeCtrl', ['$scope', ($scope) ->
+    module.controller('Home.DashboardCtrl', ['$scope', ($scope) ->
         $scope.hello = 'hello world'
     ])
 )

@@ -8,6 +8,13 @@ require.config
         'log': '../js/log'
         'angularRoute': '../lib/angular-route/angular-route.min'
         'domReady': '../lib/requirejs-domready/domReady'
+        'labjs': '../ulib/LABjs-2.0.3/LAB.min'
+        'prototype': '../ulib/prototype-1.5.1/prototype-1.5.1'
+        'extCore': '../ulib/ext-2.0.2/source/core/Ext'
+        'extBase': '../ulib/ext-2.0.2/source/adapter/ext-base'
+        'extAll': '../ulib/ext-2.0.2/ext-all-debug'
+        # 'extColorField': '../ulib/ext-2.0.2/color-field'
+        'ext': '../ulib/ext-2.0.2/ext'
     shim:
         'angular':
             'exports': 'angular'
@@ -18,6 +25,14 @@ require.config
         '$':
             'exports': 'jQuery'
         'bootstrap':
-            'deps': ['jQuery']
+            'deps': ['$']
+        'extCore':
+            'exports': 'Ext'
+        'extBase':
+            'deps': ['extCore']
+        'extAll':
+            'deps': ['extCore']
+        # 'extColorField':
+        #     'deps': ['extCore']
 
     deps: ['./init']

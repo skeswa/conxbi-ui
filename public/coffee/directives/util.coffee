@@ -1,7 +1,6 @@
 define(['./module', '$', 'log'], (module, $, log) ->
     module.directive('shim', () ->
         restrict: 'E'
-        templateUrl: 'views/shell/navbar.html'
         compile: (tElem, attrs) ->
             log.debug 'Finished loading the application - killing the overlay'
             $(tElem).remove()
@@ -9,5 +8,15 @@ define(['./module', '$', 'log'], (module, $, log) ->
                 $(this).remove()
             )
             return ->
+    ).directive('onReady', () ->
+        restrict: 'A'
+        scope:
+            onReady: '&'
+        link: (scope, element, attrs) ->
+            log.debug 'onReady was fired'
+            if not scope.executed
+                scope.onReady()
+                scope.executed = true
+            return
     )
 )

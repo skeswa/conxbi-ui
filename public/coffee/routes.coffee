@@ -7,7 +7,7 @@ define(['./app', 'angularRoute', './sitemap', 'log'], (app, ngRoute, sitemap, lo
                 log.debug 'Registering route \'' + route + '\' to angular context'
                 router.when(route,
                     templateUrl: '../views/' + navItem.view + '.html'
-                    controller: category.controller
+                    controller: navItem.controller
                 )
                 # Establish the default view
                 if navItem.main
